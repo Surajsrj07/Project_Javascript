@@ -35,21 +35,14 @@ const newYear =new Date(`January 1 ${currentYear+1} 00:00:00`);
  const s =Math.floor((diff/1000)%60);
  console.log(s);
 
-days.innerHTML = d<0?"0"+d:d;
+days.innerHTML = d<10?"0"+d:d;
 hours.innerHTML = h<10?"0"+h:h;
-minutes.innerHTML =m<0?"0"+m:m;
-seconds.innerHTML = s<0?"0"+s:s;
+minutes.innerHTML =m<10?"0"+m:m;
+seconds.innerHTML = s<10?"0"+s:s;
 
 };
 
-
 setInterval(counterTimer,1000);
-
-
-
-
-
-
 //Things to recall
 
 // 1000 ms = 1 sec
