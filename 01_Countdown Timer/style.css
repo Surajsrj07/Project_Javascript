@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akronim', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/new\ year.jpg);
+    background-size: cover;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFC312;
+}
+
+.counter>h2 {
+    font-size: 40px;
+    font-family: 'Akronim', cursive;
+    margin-top: 20px;
+    background: rgb(181, 46, 172);
+    background: linear-gradient(90deg, rgba(181, 46, 172, 1) 25%, rgba(192, 197, 76, 1) 50%, rgba(215, 109, 22, 1) 75%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 50% 50%;
+    animation: text 2s ease infinite;
+}
+
+@keyframes text {
+    0% {
+        background-position: 0%;
+        transform: translateY(4px);
+    }
+
+    50% {
+        background-position: 100%;
+        transform: translateY(-4px);
+
+    }
+
+    100% {
+        background-position: 0%;
+        transform: translateY(4px);
+
+    }
+}
+
+.box h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #C4E538;
+    letter-spacing: 2px;
+}
+
+.box small{
+    font-size: 10px;
+    color: antiquewhite;
+}
+
+
+@media (min-width:576px){
+
+.counter>h2 {
+      font-size: 50px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.box h2{
+    font-size: 22px;
+}
+
+.box small{
+    font-size: 12px;
+}
+
+}
+
+@media (min-width:768px){
+
+    .counter>h2 {
+          font-size: 60px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .box h2{
+        font-size: 26px;
+    }
+    
+    .box small{
+        font-size: 14px;
+    }
+    
+    }
