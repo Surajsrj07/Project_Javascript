@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.analog-clock{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 50%;
+    border: 15px groove #c0392b;
+}
+
+.analog-clock::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color:#c0392b ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    
+}
