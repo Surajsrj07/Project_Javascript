@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --design-color:#c0392b;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -23,7 +27,8 @@ body{
     height: 500px;
     background-color: white;
     border-radius: 50%;
-    border: 15px groove #c0392b;
+    border: 15px groove var(--design-color);
+    position: relative;
 }
 
 .analog-clock::before{
@@ -31,10 +36,47 @@ body{
     content: '';
     width: 15px;
     height: 15px;
-    background-color:#c0392b ;
+    background-color:var(--design-color) ;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
     
 }
+
+.analog-clock::after{
+    content: 'AJANTA';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--design-color) ;
+
+}
+
+.number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: var(--design-color);
+    --rotate:0;
+    transform: rotate(var(--rotate));
+}
+
+.number-1{transform: rotate(30deg);}
+.number-2{transform: rotate(60deg);}
+.number-3{transform: rotate(90deg);}
+.number-4{transform: rotate(120deg);}
+.number-5{transform: rotate(150deg);}
+.number-6{transform: rotate(180deg);}
+.number-7{transform: rotate(210deg);}
+.number-8{transform: rotate(240deg);}
+.number-9{transform: rotate(270deg);}
+.number-10{transform: rotate(300deg);}
+.number-11{transform: rotate(330deg);}
+.number-12{transform: rotate(360deg);}
+
