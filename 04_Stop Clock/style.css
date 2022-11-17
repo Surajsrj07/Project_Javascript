@@ -20,32 +20,54 @@ body{
 
 
 .stop-clock{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     user-select: none;
-  
+    border: 12px solid #b8e994;
+
 }
 
 .frame{
    display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 50px;
+    gap:3px;
+}
+
+.hrs,
+.mins,
+.secs,
+.ms,
+.colon
+{
+  width:50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.colon{
+    width: 10px;
+    height: 50px;
 }
 
 
 .buttons{
-    margin-top: 15px;
-    text-align: center;
+    margin-top: 25px;
 }
 
 .buttons button{
   border: none;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border-radius: 3px;
   text-transform: uppercase;
   color: white;
+  margin-left: 15px;
   
 }
 
