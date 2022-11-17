@@ -8,6 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@font-face {
+    font-family: digital-7;
+    src: url(./digital-7\ \(mono\).ttf);
+}
+
 
 body{
     width: 100vw;
@@ -30,7 +35,7 @@ body{
     flex-direction: column;
     user-select: none;
     border: 12px solid #b8e994;
-
+    cursor: pointer;
 }
 
 .frame{
@@ -46,9 +51,12 @@ body{
 {
   width:50px;
   height: 50px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   line-height: 50px;
+  color: #eb2f06;
+  font-family: digital-7;
+
 }
 
 .colon{
@@ -63,7 +71,7 @@ body{
 
 .buttons button{
   border: none;
-  padding: 10px 15px;
+  padding: 8px 20px;
   border-radius: 3px;
   text-transform: uppercase;
   color: white;
@@ -83,6 +91,12 @@ body{
 .reset{
     background-color: #e74c3c;
   
+}
+
+
+h3{
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 

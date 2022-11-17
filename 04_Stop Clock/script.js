@@ -5,10 +5,13 @@ const btnReset = document.querySelector('.reset');
 let hrs = mins = secs = ms = 0, startTimer;
 
 
+
+
+btnStart.addEventListener('click', () => {
+
 btnStart.classList.add('start-active');
 btnStop.classList.remove('stop-active');
 
-btnStart.addEventListener('click', () => {
 
     startTimer = setInterval(() => {
 
