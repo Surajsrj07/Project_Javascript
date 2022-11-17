@@ -83,16 +83,36 @@ body{
 
 
 .needle{
+    --rotation:0;
     position: absolute;
     width: 10px;
     height: 40%;
-    background-color: #b33939;
     left: 50%;
     bottom: 50%;
-    transform: translatex(-50%);
+    transform: translatex(-50%) rotate(calc(var(--rotation)*1deg));
     transform-origin: bottom;
     z-index:8 ;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #000000;
+}
+
+.hrs{
+    background-color: #000000;
+    width: 10px;
+    height: 30%;
+}
+
+.mins{
+    background-color: #000000;
+    width: 6px;
+    height: 35%;
+
+}
+
+.secs{
+    background-color: var(--design-color);
+    width:1px;
+    height: 40%;
+
 }
