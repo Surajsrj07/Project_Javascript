@@ -84,3 +84,10 @@ body{
     background-color: #e74c3c;
   
 }
+
+
+.start-active,
+.stop-active{
+    pointer-events: none;
+    opacity: 0.5;
+}
