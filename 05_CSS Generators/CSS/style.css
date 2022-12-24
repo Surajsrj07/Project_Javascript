@@ -11,7 +11,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #a29bfe;
+    background-color: #55efc4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +75,6 @@ body{
     height: 40px;
     color: white;
     border-radius: 5px;
-    background-color: #a29bfe;
+    background-color: #44bd32;
 }
  
