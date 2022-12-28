@@ -25,7 +25,7 @@ body{
 .analog-clock{
     width: 500px;
     height: 500px;
-    background-color: white;
+    background-color: azure;
     border-radius: 50%;
     border: 15px groove var(--design-color);
     position: relative;
