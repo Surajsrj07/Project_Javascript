@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    background-color: #34495e;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    gap: 8px 10px;
+
+}
+
+
+.img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
