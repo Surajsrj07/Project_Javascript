@@ -16,18 +16,18 @@
 
             <div class="form-group">
               <input type="text" id="output">
-              <button class="btn-copy">COPY</button>
+              <button id="btnCopy" class="btn-copy">COPY</button>
 
             </div>
 
             <div class="form-group">
                 <label for="length">Password Length </label>
-                <input type="number" id="length" value="8">
+                <input type="number" id="length" value="8" min="6">
             </div>
 
 
             <div class="form-group">
-                <input type="checkbox" id="number">
+                <input type="checkbox" id="number" checked>
                 <label for="number">Number</label>
             </div>
 
@@ -48,7 +48,7 @@
 
 
             <div class="form-group">
-                <button class="pswd">Generate Password</button>
+                <button type="submit" class="pswd">Generate Password</button>
             </div>
       
         </form>
