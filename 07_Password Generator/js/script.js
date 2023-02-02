@@ -31,9 +31,14 @@ btnCopy.addEventListener('click', async () => {
 32     ---->Space
 48-57  ----->0-9 */
 
+//Examples
+//Math.random(); // 1 
+//Math.random()*5; // 2  5  4 
 
+//Math.floor(Math.random()*50);
 //String.fromCharCode(65);  //A
 //String.fromCharCode(97);  //a
+
 
 
 function generateRandomChar(min, max) {
@@ -106,4 +111,6 @@ frm.addEventListener('submit', (e) => {
 
     outputElement.value = generatedPassword;
 
-});
+}); 
+
+
