@@ -4,7 +4,7 @@ const passwordLengthElement = document.querySelector('#length');
 const numberElement = document.querySelector('#number');
 const capitalElement = document.querySelector('#capital');
 const smallElement = document.querySelector('#small');
-const symbolElement = document.querySelector('#symbols');
+const symbolElement = document.querySelector('#symbol');
 const frm = document.querySelector('#frm');
 
 
@@ -31,34 +31,79 @@ btnCopy.addEventListener('click', async () => {
 32     ---->Space
 48-57  ----->0-9 */
 
+
 //String.fromCharCode(65);  //A
 //String.fromCharCode(97);  //a
 
 
 function generateRandomChar(min, max) {
-    const limit = max - min + 1;
+    const limit = max - min + 1;  //26 Characters A-Z
     return String.fromCharCode(Math.floor(Math.random() * limit) + min);
 }
 
-//Generates random character
-//generateRandomChar(65,90);
+//generateRandomChar(65,90); //A
+//generateRandomChar(97,122); //A
 
-function capitalValue(){
-    return generateRandomChar(65,90); //capital
+function capitalValue() {
+    return generateRandomChar(65, 90);  //Capital letters
 }
 
-function smallValue(){
-    return generateRandomChar(97,122); //small
+function smallValue() {
+    return generateRandomChar(97, 122);  //Small letters
 }
 
-function numberValue(){
-    return generateRandomChar(48,57); //numbers
+function numberValue() {
+    return generateRandomChar(48, 57);  //Numbers 0 - 9
 }
 
-function symbolValue(){
-
-    const symbols ="~`!@#$%^&*()_-+=/.{[}]\|:'<,>/?";
-
-    return symbols[Math.floor(Math.random()*symbols.length)];
+function symbolValue() {
+    const symbols = "!@#$%^&*()_-+=/:;.";
+    return symbols[Math.floor(Math.random() * symbols.length)];
 }
-//symbolValue(); 
+
+
+const functionArray = [
+    {
+        element: numberElement,
+        fun: numberValue
+    },
+
+    {
+        element: capitalElement,
+        fun: capitalValue
+    },
+
+    {
+        element: smallElement,
+        fun: smallValue
+    },
+
+    {
+        element: symbolElement,
+        fun: symbolValue
+    },
+
+];
+
+//Click Submit button =>Generate Password
+
+frm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const limit = passwordLengthElement.value;
+
+    let generatedPassword = "";
+
+    const funArray = functionArray.filter(({ element }) => element.checked);    // Eg: numbers and capitals 15ABC48G
+    //console.log(funArray);
+
+    for (i = 0; i < limit; i++) {
+        const index = Math.floor(Math.random() * funArray.length);  //Eg:2
+        const letter = funArray[index].fun();
+        generatedPassword += letter;
+
+    }
+
+    outputElement.value = generatedPassword;
+
+});
