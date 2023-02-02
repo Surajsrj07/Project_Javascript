@@ -65,6 +65,11 @@ h2{
     font-weight: 600;
 }
 
+.btn-copy:active{
+    background-color:white;
+    color: #4184F1;
+}
+
 .pswd{
     padding: 6px;
     border-radius: 5px;
@@ -75,4 +80,9 @@ h2{
     font-weight: bold;
     text-transform: uppercase;
     
+}
+
+.pswd:active{
+    background-color:white;
+    color: #4184F1;
 }
