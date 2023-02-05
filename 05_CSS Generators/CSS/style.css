@@ -12,7 +12,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #2c3e50;
+    background-color:#f1f2f6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,14 @@ body {
 .container {
     width: 660px;
     height: 660px;
-    background-color: wheat;
+    background-color: white;
     position: relative;
 }
 
 .tool {
     width: 350px;
     height: 350px;
-    background-color: white;
+    background-color: #2c3e50;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +50,7 @@ body {
 
 
 .form-group label{
-    color: black;
+    color: gold;
     margin-bottom: 20px;
     font-weight: 800;
 }
